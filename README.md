@@ -35,7 +35,11 @@ aws lightsail start-instance --instance-name Oregon
 ##### 第四步：编辑重写配置
 输入`crontab -e`
 将以下代码复制到最后一行。注意，代码前面不要加#
-`0 3 * * * bash /root/renewip.sh`
+```
+0 3 * * * bash /root/renewip.sh
+```
 最后调整一下时区
-`timedatectl set-timezone Asia/Hong_Kong`
+```
+timedatectl set-timezone Asia/Hong_Kong
+```
 大功告成！
