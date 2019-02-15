@@ -15,14 +15,15 @@ python --version
 apt update -y
 apt install python-pip -y
 ```
-或者也可以使用 AWS 的用户指南进行安装，点击网址：https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/install-linux.html#install-linux-path
+或者也可以使用 AWS 的用户指南进行安装，点击网址：https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/install-linux.html#install-linux-path <br>
 再使用 Pip 安装 AWS CLI `pip install awscli --upgrade --user`
 ##### 第三步：手动配置 AWS CLI 的文件
 东东给的脚本已经失效了。访问原blog的文章，原来是博主自己更改了方法，自己感觉没有很好用，所以决定不用脚本，手动更改，很简单！
-1. 配置credentials，运行`vim ~/.aws/credentials`或者`nano ~/.aws/credentials`
-vim 保存的方式是 :wq!, nano保存的方式是 ctrl + x 再按Y
-将第一步获取的 AWS AccessKeyId 和 AWS SecretKey 复制进去即可。
-2. 配置config，运行`vim ~/.aws/config`或者`nano ~/.aws/config`
+1. 配置credentials<br>
+运行`vim ~/.aws/credentials`或者`nano ~/.aws/credentials`<br>
+vim 保存的方式是 :wq!, nano保存的方式是 ctrl + x 再按Y<br>
+将第一步获取的 AWS AccessKeyId 和 AWS SecretKey 复制进去即可。<br>
+2. 配置config<br>运行`vim ~/.aws/config`或者`nano ~/.aws/config`<br>
 根据虚拟机所在区域填写即可。注意，不需要管a,b,c区。比如你的虚拟机所在位置是`us-west-2a`，那就填写`us-west-2`。
 ##### 第三步：写重启文件
 输入`nano renewip.sh`
