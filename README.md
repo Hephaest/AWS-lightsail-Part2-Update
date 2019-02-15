@@ -27,7 +27,7 @@ pip install awscli --upgrade --user
 vim 保存的方式是 :wq!, nano保存的方式是 ctrl + x 再按Y<br>
 将第一步获取的 AWS AccessKeyId 和 AWS SecretKey 复制进去即可。<br>
 2. 配置config<br>运行`vim ~/.aws/config`或者`nano ~/.aws/config`<br>
-根据虚拟机所在区域填写即可。注意，不需要管a,b,c区。比如你的虚拟机所在位置是`us-west-2a`，那就填写`us-west-2`。
+根据虚拟机所在区域填写即可。注意，不需要管a,b,c区。比如你的实例所在位置是`us-west-2a`，那就填写`us-west-2`。
 ##### 第四步：写重启文件
 输入
 ```
