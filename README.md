@@ -29,7 +29,10 @@ vim 保存的方式是 :wq!, nano保存的方式是 ctrl + x 再按Y<br>
 2. 配置config<br>运行`vim ~/.aws/config`或者`nano ~/.aws/config`<br>
 根据虚拟机所在区域填写即可。注意，不需要管a,b,c区。比如你的虚拟机所在位置是`us-west-2a`，那就填写`us-west-2`。
 ##### 第四步：写重启文件
-输入`nano renewip.sh`
+输入
+```
+nano renewip.sh
+```
 以下代码和东东给的方法一致，比如我想重启的服务器的名字是Oregon，那么就填写成以下形式后保存
 ```
 aws lightsail stop-instance --instance-name Oregon
@@ -37,7 +40,10 @@ sleep 30
 aws lightsail start-instance --instance-name Oregon
 ```
 ##### 第五步：编辑重写配置
-输入`crontab -e`
+输入
+```
+crontab -e
+```
 将以下代码复制到最后一行。注意，代码前面不要加#
 ```
 0 3 * * * bash /root/renewip.sh
