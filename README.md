@@ -16,7 +16,10 @@ apt update -y
 apt install python-pip -y
 ```
 或者也可以使用 AWS 的用户指南进行安装，点击网址：https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/install-linux.html#install-linux-path <br>
-再使用 Pip 安装 AWS CLI `pip install awscli --upgrade --user`
+再使用 Pip 安装 AWS CLI
+```
+pip install awscli --upgrade --user
+```
 ##### 第三步：手动配置 AWS CLI 的文件
 东东给的脚本已经失效了。访问原blog的文章，原来是博主自己更改了方法，自己感觉没有很好用，所以决定不用脚本，手动更改，很简单！
 1. 配置credentials<br>
