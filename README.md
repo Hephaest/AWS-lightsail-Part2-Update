@@ -52,4 +52,3 @@ crontab -e
 ```
 timedatectl set-timezone Asia/Hong_Kong
 ```
-大功告成！
