@@ -24,14 +24,13 @@ pip install awscli --upgrade --user
 东东给的脚本已经失效了。访问原blog的文章，原来是博主自己更改了方法，自己感觉没有很好用，所以决定不用脚本，手动更改，很简单！
 1. 配置credentials<br>
 运行`vim ~/.aws/credentials`或者`nano ~/.aws/credentials`<br>
-复制黏贴以下代码，注意把AWS AccessKeyId 和 AWS SecretKey 改成自己的<br>
+复制黏贴以下代码，将第一步获取的 AWS AccessKeyId 和 AWS SecretKey 复制进去<br>
 ```
 [default]
 aws_access_key_id=AKIAIOSFODNN7EXAMPLE
 aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
 vim 保存的方式是 :wq!, nano保存的方式是 ctrl + x 再按Y<br>
-将第一步获取的 AWS AccessKeyId 和 AWS SecretKey 复制进去即可。<br>
 2. 配置config<br>
 运行`vim ~/.aws/config`或者`nano ~/.aws/config`<br>
 复制黏贴以下代码，根据自己虚拟机所在区域填写即可。注意，不需要管a,b,c区。比如你的实例所在位置是`us-west-2a`，那就填写`us-west-2`<br>
