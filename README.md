@@ -1,7 +1,7 @@
 # AWS-lightsail-Part2-Update
+最后一次更新于 `2019/07/03`
 针对油管博主 BIGDONGDONG 的第 96 期视频 part 2 命令的一次更新, 原链接: https://github.com/bigdongdongCLUB/GoodGoodStudyDayDayUp/issues/2
 #### 由于原命令部分已经失效，为了方便后人操作，会将所有步骤再列一次：
-最后一次更新于 `2019/07/03`
 ##### 第一步：获取 AWS AccessKeyId 和 AWS SecretKey
 这一步只需要先点击 https://lightsail.aws.amazon.com/ls/webapp/account/advanced ，然后点击**转到IAM控制台**，选择**访问密钥(访问密钥ID和秘密访问密钥)**, 最后点击**创建新的访问密钥**并保存.csv格式的文件。
 ##### 第二步：安装AWS CLI
