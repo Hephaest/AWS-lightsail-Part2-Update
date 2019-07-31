@@ -1,5 +1,5 @@
 # AWS-lightsail-Part2-Update
-最后一次更新于 `2019/07/03`
+最后一次更新于 `2019/07/31`
 
 针对油管博主 BIGDONGDONG 的第 96 期视频 part 2 命令的一次更新, 原链接: https://github.com/bigdongdongCLUB/GoodGoodStudyDayDayUp/issues/2
 #### 由于原命令部分已经失效，为了方便后人操作，会将所有步骤再列一次：
