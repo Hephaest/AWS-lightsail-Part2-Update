@@ -3,9 +3,9 @@
 
 针对油管博主 BIGDONGDONG 的第 96 期视频 part 2 命令的一次更新, 原链接: https://github.com/bigdongdongCLUB/GoodGoodStudyDayDayUp/issues/2
 #### 由于原命令部分已经失效，为了方便后人操作，会将所有步骤再列一次：
-##### 第一步：获取 AWS AccessKeyId 和 AWS SecretKey
+### 第一步：获取 AWS AccessKeyId 和 AWS SecretKey
 这一步只需要先点击 https://lightsail.aws.amazon.com/ls/webapp/account/advanced ，然后点击**转到IAM控制台**，选择**访问密钥(访问密钥ID和秘密访问密钥)**, 最后点击**创建新的访问密钥**并保存.csv格式的文件。
-##### 第二步：安装AWS CLI
+### 第二步：安装AWS CLI
 以ubuntu系统为例：
 先检查是否安装了 Pip 和 Python
 ```
@@ -26,7 +26,7 @@ pip install awscli --upgrade --user
 ```
 aws --version
 ```
-##### 第三步：手动配置 AWS CLI 的文件
+### 第三步：手动配置 AWS CLI 的文件
 感谢网友的提醒，之前这部分在 `./aws/` 下操作的文件似乎过一阵子就会消失掉，可能跟重启清空有关系。<br>
 不过没关系，官网更新了更方便的操作，感兴趣的朋友可访问: https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/cli-chap-configure.html<br>
 简单来说，现在配置 `credentials` 和 `config` 可以通过输入以下命令一步到位:
@@ -43,7 +43,7 @@ Default output format [None]: json
 ```
 注意：每输入一行按一次 `Enter` 键，并不是运行命令以后一下子显示 4 行的。
 
-##### 第四步：写重启文件
+### 第四步：写重启文件
 输入
 ```
 nano renewip.sh
@@ -54,7 +54,7 @@ aws lightsail stop-instance --instance-name Oregon
 sleep 30
 aws lightsail start-instance --instance-name Oregon
 ```
-##### 第五步：编辑重写配置
+### 第五步：编辑重写配置
 输入
 ```
 crontab -e
